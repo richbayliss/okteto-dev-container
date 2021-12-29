@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-c", "-l"]
 
 # install utils
 RUN apt-get update && \
-    apt-get install -y curl && \
+    apt-get install -y build-essential curl && \
     apt-get autoremove -y && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
